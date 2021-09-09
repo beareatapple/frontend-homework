@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: 'Cousine', monospace;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+i {
+    pointer-events: none;
+}
+
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+    text-decoration-thickness: 0.2rem;
+    color: #aeaeae;
+}
+
+section button {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: rgb(129 182 250);
+    border: 2px solid rgb(255 255 255);
+    border-radius: 0.25em;
+    background: aliceblue;
+    margin: 3px;
+}
+
+.complete:hover {
+    color: #fdd835;
+    background: #fffde7;
+}
+
+.trash:hover {
+    color: #ffa98f;
+    background-color: #fbe9e7;
+}
+
+@-webkit-keyframes scaleDown {
+    to {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@keyframes scaleDown {
+    to {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
